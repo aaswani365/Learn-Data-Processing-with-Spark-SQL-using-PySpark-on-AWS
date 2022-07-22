@@ -1,0 +1,10 @@
+# Copy datasets from local to ec2-user(EC2 instance)
+
+scp -r -i "Data-processing.pem" postgresql-42.3.1.jar ec2-43-205-99-98.ap-south-1.compute.amazonaws.com:/home/ec2-user/
+
+
+# Copy the Datasets from ec2-user directory to Spark Directory
+
+docker cp datasets hdp_spark-master:/spark/
+
+

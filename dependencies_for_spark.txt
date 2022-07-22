@@ -1,0 +1,21 @@
+# Commands to Add Hive - Spark Dependencies
+
+Requirements:
+
+1. To ADD Postgresql JAR 
+2. To copy hive-site.xml from hive and put inside spark conf directory.
+
+1. To ADD Postgresql JAR 
+
+# Commands to copy Jar file from local machine to EC2(Run this command from local machine cmd prompt):
+
+scp -r -i "Data-processing.pem" postgresql-42.3.1.jar ec2-43-205-99-98.ap-south-1.compute.amazonaws.com:/home/ec2-user/
+
+# Command to copy file from EC2 into Spark Container under Jars directory
+
+docker cp /home/ec2-user/postgresql-42.3.1.jar hdp_spark-master:/spark/jars
+
+# To copy hive-site.xml from hive and put inside spark conf directory(Run this command from ec2 home directory).
+
+docker cp ra_hive-server:/opt/hive/conf/hive-site.xml /home/ec2-user/
+docker cp hive-site.xml hdp_spark-master:/spark/conf/hive-site.xml
