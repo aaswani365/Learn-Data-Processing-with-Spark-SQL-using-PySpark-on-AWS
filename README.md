@@ -3,7 +3,7 @@
 ![Untitled](https://user-images.githubusercontent.com/107995802/180428326-8814cfea-2b0d-4372-b427-128edc46f780.png)
 
 ## Agenda
-In this AWS Spark SQL project, you will analyze the Movies and Ratings Dataset using RDD and Spark SQL to get hands-on experience on the fundamentals of Scala programming language.
+In this AWS Spark SQL project, you will analyze the Movies and Ratings Dataset using RDD and Spark SQL to get hands-on experience on the fundamentals of Python programming language.
 
 ## Tech Stack
 
